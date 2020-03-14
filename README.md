@@ -2,7 +2,7 @@
 
 ## usersテーブル
 |Column|Type|Options|
-|------|----|-------|
+|:------:|:----:|:-------:|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
@@ -14,7 +14,7 @@
 
 ## groupsテーブル
 |Column|Type|Options|
-|------|----|-------|
+|:------:|:----:|:-------:|
 |group_name|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 ### Association
@@ -23,7 +23,7 @@
 
 ## posts_tagsテーブル
 |Column|Type|Options|
-|------|----|-------|
+|:------:|:----:|:-------:|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -32,7 +32,7 @@
 
 ## commentsテーブル
 |Column|Type|Options|
-|------|----|-------|
+|:------:|:----:|:-------:|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 |text|text|null: false|
