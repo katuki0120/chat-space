@@ -10,7 +10,7 @@
 |groups_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :groups, through:  :users_groups
-- has_many :comments
+- has_many :messages
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -19,7 +19,7 @@
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - has_many :users, through:  :users_groups
-- has_many :comments
+- has_many :messages
 
 ## posts_tagsテーブル
 |Column|Type|Options|
@@ -30,13 +30,13 @@
 - belongs_to :user
 - belongs_to :group
 
-## commentsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |:------:|:----:|:-------:|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 |text|text|null: false|
-|image|text||
+|image|string||
 ### Association
 - belongs_to :user
 - belongs_to :group
