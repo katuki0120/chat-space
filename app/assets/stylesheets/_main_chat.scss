@@ -1,9 +1,14 @@
+$mainWhiteColor: #ffffff;
+$textBlackColor: #333333;
+$textGrayColor: #999999;
+$submitBlueColor: #38aef0;
+
 .main-chat {
   width: calc(100vw - 300px);
   height: 100vh;
   display: block;
   &__group-info {
-    background-color: #ffffff;
+    background-color: $mainWhiteColor;
     height: 101px;
     border-bottom: 1px solid #eeeeee;
     display: flex;
@@ -12,12 +17,12 @@
     &__items {
       padding-top: 35px;
       &--name {
-        color: #333333;
+        color: $textBlackColor;
         font-size: 20px;
         padding-bottom: 15px;
       }
       &--members {
-        color: #999999;
+        color: $textGrayColor;
         font-size: 12px;
       }
     }
@@ -27,10 +32,10 @@
       font-size: 16px;
       height: 40px;
       line-height: 40px;
-      border: solid 1px #38aef0;
+      border: solid 1px $submitBlueColor;
     }
     &__edit-btn {
-      color: #38aef0;
+      color: $submitBlueColor;
       text-decoration: none;
     }
   }
@@ -44,12 +49,12 @@
         display: flex;
         padding-bottom: 12px;
         &--name {
-          color: #333333;
+          color: $textBlackColor;
           font-size: 16px;
           align-items: center;
         }
         &--time {
-          color: #999999;
+          color: $textGrayColor;
           font-size: 12px;
           margin-left: 5px;
         }
@@ -73,12 +78,11 @@
       display: flex;
       justify-content: space-between;
       &__form {
-        background-color: white;
+        background-color: $mainWhiteColor;
         width: 100%;
         position: relative;
         &--text {
-          width: 100%;
-          color: gray;
+          color: $textGrayColor;
           line-height: 50px;
           padding: 0px 40px 0px 10px;
         }
@@ -86,13 +90,15 @@
           position: absolute;
           right: 10px;
           top: 15px;
-          font-size: 1.3rem;
+          input {
+            display: none;
+          }
         }
       }
       &__send-btn {
         line-height: 50px;
-        background-color: #38aef0;
-        color: white;
+        background-color: $submitBlueColor;
+        color: $mainWhiteColor;
         margin-left: 15px;
         padding: 0px 30px;
       }

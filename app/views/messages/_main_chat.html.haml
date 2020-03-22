@@ -18,19 +18,13 @@
           2020/3/21(sut) 15:00:00
       .main-chat__message-list__message__text
         hey!
-    .main-chat__message-list__message
-      .main-chat__message-list__message__info
-        .main-chat__message-list__message__info--name
-          masa
-        .main-chat__message-list__message__info--time
-          2020/3/21(sut) 15:00:00
-      .main-chat__message-list__message__text
-        hey!
   .main-chat__message-send
     .main-chat__message-send__new
       .main-chat__message-send__new__form
         .main-chat__message-send__new__form--text
           type a message
-        = icon('far', 'image', class: 'main-chat__message-send__new__form--image')
+        %label{class: "main-chat__message-send__new__form--image"}
+          = icon('far', 'image')
+          %input{type: "file"}
       .main-chat__message-send__new__send-btn
         Send
