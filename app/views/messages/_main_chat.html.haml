@@ -1,0 +1,30 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__items
+      .main-chat__group-info__items--name
+        test
+      .main-chat__group-info__items--members
+        Member:masa
+    .main-chat__group-info__edit
+      =link_to '#', class:'main-chat__group-info__edit-btn' do
+        %span<>
+        Edit
+  .main-chat__message-list
+    .main-chat__message-list__message
+      .main-chat__message-list__message__info
+        .main-chat__message-list__message__info--name
+          masa
+        .main-chat__message-list__message__info--time
+          2020/3/21(sut) 15:00:00
+      .main-chat__message-list__message__text
+        hey!
+  .main-chat__message-send
+    .main-chat__message-send__new
+      .main-chat__message-send__new__form
+        .main-chat__message-send__new__form--text
+          type a message
+        %label{class: "main-chat__message-send__new__form--image"}
+          = icon('far', 'image')
+          %input{type: "file"}
+      .main-chat__message-send__new__send-btn
+        Send
