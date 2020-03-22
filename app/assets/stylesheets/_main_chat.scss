@@ -13,7 +13,6 @@
       padding-top: 35px;
       &--name {
         color: #333333;
-        height: 20px;
         font-size: 20px;
         padding-bottom: 15px;
       }
@@ -72,20 +71,28 @@
       height: 50px;
       width: 100%;
       display: flex;
-      background-color: red;
+      justify-content: space-between;
       &__form {
         background-color: white;
+        width: 100%;
+        position: relative;
         &--text {
+          width: 100%;
           color: gray;
-          font-size: 1px;
           line-height: 50px;
+          padding: 0px 40px 0px 10px;
         }
         &--image {
-          
+          position: absolute;
+          right: 10px;
+          top: 15px;
+          font-size: 1.3rem;
         }
       }
       &__send-btn {
+        line-height: 50px;
         background-color: #38aef0;
+        color: white;
         margin-left: 15px;
         padding: 0px 30px;
       }
