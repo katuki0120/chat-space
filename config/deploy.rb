@@ -32,6 +32,3 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
-
-require 'capistrano/scm/git'
-install_plugin Capistrano::SCM::Git
