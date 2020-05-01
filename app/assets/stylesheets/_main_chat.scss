@@ -71,37 +71,40 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    box-sizing: border-box;
+    width: calc(100% - 300px);
+    position: absolute;
+    bottom: 0;
     &__new {
+      width: 100%;
+      justify-content: center;
       position: relative;
       &__form {
+        display: inline;
+        position: relative;
         &--text {
-          color: $textGrayColor;
+          width: calc(100% - 115px);
           height: 50px;
-          width: 90%;
-          padding: 0 0px 0 10px;
+          padding: 0px 40px 0px 10px;
           border-style: none;
-          float: left;
         }
         &--image {
+          line-height: 50px;
           position: absolute;
-          left: 87%;
-          top: 15px;
-          font-size: 1.3rem;
-          float: left;
+          right: 10px;
           &__input {
             display: none;
+            width: 30px;
           }
         }
       }
-    }
     &__send-btn {
-        width: 100px;
-        height: 50px;
-        background-color: $submitBlueColor;
-        color: $mainWhiteColor;
-        padding: 0px 30px;
-        float: right;
+          width: 100px;
+          height: 50px;
+          background-color: $submitBlueColor;
+          color: $mainWhiteColor;
+          cursor: pointer;
+          margin-left: 10px;
+      }
     }
   }
 }
