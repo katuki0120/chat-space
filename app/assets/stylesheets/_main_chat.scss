@@ -73,6 +73,7 @@
     padding: 20px 40px;
     width: calc(100% - 300px);
     position: absolute;
+    display: inline;
     bottom: 0;
     &__new {
       width: 100%;
@@ -103,7 +104,6 @@
           background-color: $submitBlueColor;
           color: $mainWhiteColor;
           cursor: pointer;
-          margin-left: 10px;
       }
     }
   }
